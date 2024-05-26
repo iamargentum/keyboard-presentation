@@ -1,0 +1,25 @@
+.master {
+    color: #2e2e2e !important;
+    font-weight: 200 !important;
+    background-color: #f5f4f1 !important;
+    font-family: 'Mukta', sans-serif !important;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.heroSection {
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heroImages {
+    margin: auto;
+    display: flex;
+    width: 800px;
+    flex-direction: row;
+    justify-content: space-between;
+}
