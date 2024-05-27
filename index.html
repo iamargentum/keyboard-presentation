@@ -20,6 +20,9 @@
 		<!-- keyboard styles -->
 		<link rel="stylesheet" href="./keyb.css" />
 
+		<!-- for timers in examples -->
+		<script src="./timers.js"></script>
+
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
@@ -50,8 +53,8 @@
 				</section>
 
 				<!-- slide 3 -->
-				<section data-auto-animate style="width: 100%; text-align: center;">
-					<p>because not using the mouse -</p>
+				<section data-auto-animate data-auto-animate-id="whyDitchYourMouse" style="width: 100%; text-align: center;">
+					<p data-id="becauseNotUsingTheMouse" style="text-align: center; width: 100%;">because not using the mouse -</p>
 					<div style="display: flex; gap: 20px; width: 100%; justify-content: center;">
 						<div style="display: flex; flex-direction: column; align-items: center;">
 							<h2 style="line-height: 50px; margin-top: 33px; margin-bottom: 33px; color: #999; font-size: 30px;">saves time</h2>
@@ -64,8 +67,8 @@
 				</section>
 
 				<!-- slide 3 -->
-				<section data-auto-animate style="width: 100%; text-align: left;">
-					<p>because not using the mouse -</p>
+				<section data-auto-animate data-auto-animate-id="whyDitchYourMouse" style="width: 100%; text-align: left;">
+					<p data-id="becauseNotUsingTheMouse" style="text-align: left; width: 100%;">because not using the mouse -</p>
 					<div style="display: flex; gap: 20px; width: 100%;">
 						<div style="display: flex; flex-direction: column; align-items: flex-start;">
 							<h2 style="line-height: 50px; margin-top: 33px; margin-bottom: 33px; color: #2e2e2e; font-size: 40px;">saves time</h2>
@@ -78,8 +81,8 @@
 				</section>
 
 				<!-- slide 3 -->
-				<section data-auto-animate style="width: 100%; text-align: left;">
-					<p>because not using the mouse -</p>
+				<section data-auto-animate data-auto-animate-id="whyDitchYourMouse" style="width: 100%; text-align: left;">
+					<p data-id="becauseNotUsingTheMouse" style="text-align: left; width: 100%;">because not using the mouse -</p>
 					<div style="display: flex; gap: 20px; width: 100%;">
 						<div style="display: flex; flex-direction: column; align-items: flex-start;">
 							<h2 style="line-height: 50px; margin-top: 33px; margin-bottom: 33px; color: #999; font-size: 30px;">saves time</h2>
@@ -92,8 +95,8 @@
 				</section>
 
 				<!-- slide 3 -->
-				<section data-auto-animate style="width: 100%; text-align: left;">
-					<p>because not using the mouse -</p>
+				<section data-auto-animate data-auto-animate-id="whyDitchYourMouse" style="width: 100%; text-align: left;">
+					<p data-id="becauseNotUsingTheMouse" style="text-align: left; width: 100%;">because not using the mouse -</p>
 					<div style="display: flex; gap: 20px; width: 100%;">
 						<div style="display: flex; flex-direction: column; align-items: flex-start;">
 							<h2 style="line-height: 50px; margin-top: 33px; margin-bottom: 33px; color: #999; font-size: 30px;">saves time</h2>
@@ -106,8 +109,8 @@
 				</section>
 
 				<!-- slide 3 -->
-				<section data-auto-animate style="width: 100%; text-align: left;">
-					<p>because not using the mouse -</p>
+				<section data-auto-animate data-auto-animate-id="whyDitchYourMouse" style="width: 100%; text-align: left;">
+					<p data-id="becauseNotUsingTheMouse" style="text-align: left; width: 100%;">because not using the mouse -</p>
 					<div style="display: flex; gap: 20px; width: 100%;">
 						<div style="display: flex; flex-direction: column; align-items: flex-start;">
 							<h2 style="line-height: 50px; margin-top: 33px; margin-bottom: 33px; color: #999; font-size: 30px;">saves time</h2>
@@ -121,19 +124,12 @@
 				<!-- why ends here -->
 
 				<!-- what do we use if not the mouse? starts here -->
-				<section>
-					<h2>What do we use if not the mouse?</h2>
-				</section>
 
 				<section>
-					<h2>Keyboard shortcuts!</h2>
+					<h2>The keyboard!</h2>
 				</section>
 
-				<section>
-					<h2>What is a keyboard?</h2>
-				</section>
-
-				<section data-auto-animate>
+				<section data-auto-animate data-auto-animate-id="keyboard">
 					<h2>An input device </h2>
 					<h2>that we use to write words</h2>
 					<div class="keyboard" data-id="keyb">
@@ -225,7 +221,7 @@
 					</div>
 				</section>
 
-				<section data-auto-animate>
+				<section data-auto-animate data-auto-animate-id="keyboard">
 					<h2>An input device</h2>
 					<h2 style="opacity: 0;">that we use to write words</h2>
 					<div class="keyboard" data-id="keyb">
@@ -316,8 +312,113 @@
 						</div>
 					</div>
 				</section>
-
 				<!-- what do we use if not the mouse? ends here -->
+
+				<!-- keyboard shortcuts start -->
+				<section data-auto-animate data-auto-animate-id="keyboardShortcuts">
+					<h2>Keyboard Shortcuts</h2>
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="keyboardShortcuts">
+					<h2 style="font-size: 25px;">Keyboard Shortcuts</h2>
+					<div style="display: flex; justify-content: space-between;">
+						<h2 style="font-size: 35px;" data-id="operatingSystem">Operating system shortcuts</h2>
+					</div>
+				</section>
+
+				<section data-auto-animate data-auto-animate-id="keyboardShortcuts">
+					<h2 style="font-size: 25px;">Keyboard Shortcuts</h2>
+					<div style="display: flex; justify-content: space-between;">
+						<h2 style="font-size: 35px;" data-id="operatingSystem">Operating system shortcuts</h2>
+						<h2 style="font-size: 35px;" data-id="commonSoftware">Common software shortcuts</h2>
+					</div>
+				</section>
+
+				<!-- opertaing system shortcuts vertical slides -->
+				<section>
+					<section>
+						<h2>Operating system shortcuts</h2>
+					</section>
+					<!-- file handling -->
+					<section></section>
+					<!-- window navigation -->
+					<!-- file navigation -->
+				</section>
+
+				<!-- common software shortcuts vertical slides -->
+				<section>
+					<section>
+						<h2>Common software shortcuts</h2>
+					</section>
+					<!-- web browser -->
+					<section></section>
+					<!-- canva -->
+					<section></section>
+					<!-- power point -->
+					<section></section>
+					<!-- word/docs -->
+					<section></section>
+					<!-- excel/sheets -->
+					<section></section>
+					<!-- YouTube -->
+					<section></section>
+				</section>
+				<!-- keyboard shortcuts end -->
+
+				<!-- examples start -->
+				<section>
+					<section>
+						<h2>Examples</h2>
+					</section>
+
+					<!-- clicking a button -->
+					<section>
+						<div>
+							<h2>Clicking a button</h2>
+							<h1 id="mouseTimerClick">00:000</h1>
+						</div>
+						<div>
+							<h2>Using the mouse</h2>
+							<div>
+								<button>Click here</button>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div>
+							<h2>Clicking a button</h2>
+							<h1 id="mouseTimerKeyboard">00:000</h1>
+						</div>
+						<div>
+							<h2>Using the keyboard</h2>
+							<div>
+
+							</div>
+						</div>
+					</section>
+					<!-- copy + paste -->
+					<section></section>
+					<!-- somethign in sheets -->
+					<section></section>
+				</section>
+				<!-- examples end -->
+
+				<!-- it does not end here starts (touch typing)  -->
+				<section></section>
+				<!-- it does not end here ends -->
+
+				<!-- what else? starts (weird input devices and steganographs) -->
+				<!-- what else? ends -->
+
+				<!-- downsides start -->
+				<section></section>
+				<!-- downsides end -->
+
+				<!-- mouse shortcuts? start -->
+				<section></section>
+				<!-- mouse shortcuts? end -->
+
+				<!-- games -->
 
 				<!-- credits -->
 				<section>
