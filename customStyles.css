@@ -23,3 +23,8 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
 }
+
+
+#mouseTimerClick {
+    font-size: 40px;
+}
