@@ -6,7 +6,7 @@ const allowedKeys = [
     'y', 'z', ' '
 ];
 
-const API_URL = 'http://localhost:5000/submit';
+const API_URL = 'https://878f-43-242-225-49.ngrok-free.app/submit';
 
 let testExpired = false;
 
