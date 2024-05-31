@@ -125,7 +125,7 @@ const keyDownEventHandler = (e) => {
         timeoutKeeper = setTimeout(() => {
             // change the div contents to empty thing
             showSpeedAndAccuracy();
-        }, 5000);
+        }, 30000);
     }
 
     if(words[gameCursorIndex] === e.key) {
