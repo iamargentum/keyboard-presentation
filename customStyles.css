@@ -1,7 +1,7 @@
 .master {
     color: #2e2e2e !important;
     font-weight: 200 !important;
-    background-color: #f5f4f1 !important;
+    background-color: #eddad8 !important;
     font-family: 'Mukta', sans-serif !important;
 }
 
@@ -21,7 +21,7 @@ h2 {
     display: flex;
     width: 800px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
