@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Mukta', sans-serif !important;
+}
+
+.parent {
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#typingField {
+    color: #ccc;
+}
