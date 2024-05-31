@@ -34,7 +34,6 @@
 					<div class="heroSection">
 						<!-- images - Relove and Caimera -->
 						<div class="heroImages">
-							<img src="./assets/relove-logo.png" width="auto" height="150" />
 							<img src="./assets/caimera-logo.png" width="auto" height="150" />
 						</div>
 						<!-- May 2024 -->
@@ -43,8 +42,14 @@
 				</section>
 
 				<!-- slide 1 -->
-				<section>
-					<h2>Ditch your mouse</h2>
+				<section data-auto-animate>
+					<h2 data-id="ditchYourMouse">Ditch your mouse</h2>
+				</section>
+				<section data-auto-animate>
+					<s>
+						<h2 data-id="ditchYourMouse">Ditch your mouse</h2>
+					</s>
+					<h2>How to use the keyboard more effectively</h2>
 				</section>
 
 				<!-- why? -->
@@ -1217,39 +1222,62 @@
 					</section>
 
 					<!-- clicking a button -->
-					<section>
+					<section data-auto-animate onmousemove="startTimer('mouseClickTimer')">
 						<div>
 							<h2>Clicking a button</h2>
-							<h1 id="mouseTimerClick">00:000</h1>
+							<h1 id="mouseClickTimer">00:00</h1>
 						</div>
 						<div>
 							<h2>Using the mouse</h2>
-							<div>
-								<button>Click here</button>
-							</div>
+							<button onclick="stopTimer('mouseClickTimer')">Click here</button>
 						</div>
 					</section>
-					<section>
+					<section data-auto-animate onkeydown="startTimer('keyboardClickTimer')">
 						<div>
 							<h2>Clicking a button</h2>
-							<h1 id="mouseTimerKeyboard">00:000</h1>
+							<h1 id="keyboardClickTimer">00:00</h1>
 						</div>
 						<div>
 							<h2>Using the keyboard</h2>
-							<div>
-
-							</div>
+							<button onfocus="startTimer('keyboardClickTimer')" onclick="stopTimer('keyboardClickTimer')">Click here</button>
 						</div>
 					</section>
+
 					<!-- copy + paste -->
-					<section></section>
+					<section onmousemove="startTimer('mouseCopyPasteTimer')">
+						<h2>Copying text</h2>
+						<h1 id="mouseCopyPasteTimer">00:00</h1>
+						<h2>Using the mouse</h2>
+						<input type="text" value="copy this text to the next box" />
+						<!-- paste event callback -->
+						<input type="text" oninput="stopTimer('mouseCopyPasteTimer')" />
+					</section>
+
+					<section data-state="keyboardCopyPaste">
+						<h2>Copying text</h2>
+						<h1 id="keyboardCopyPasteTimer">00:00</h1>
+						<h2>Using the keyboard</h2>
+						<input id="keyboardCopyInput" type="text" value="copy this text to the next box" onselect="startTimer('keyboardCopyPasteTimer')" />
+						<!-- paste event callback -->
+						<input type="text" oninput="stopTimer('keyboardCopyPasteTimer')" />
+					</section>
+
 					<!-- somethign in sheets -->
-					<section></section>
+					<section>
+						https://docs.google.com/spreadsheets/d/1r94Unx9eXLqoiLnLmYaN9m6Gk5H4AuB0jOrwlExLlqY/edit#gid=0
+					</section>
+
 				</section>
 				<!-- examples end -->
 
 				<!-- it does not end here starts (touch typing)  -->
-				<section></section>
+				<section>
+					<h2>What else?</h2>
+				</section>
+
+				<section>
+
+				</section>
 				<!-- it does not end here ends -->
 
 				<!-- what else? starts (weird input devices and steganographs) -->
@@ -1260,7 +1288,12 @@
 				<!-- downsides end -->
 
 				<!-- mouse shortcuts? start -->
-				<section></section>
+				<section>
+					<!-- double click -->
+
+					<!-- triple click -->
+					<!-- centre mouse button -->
+				</section>
 				<!-- mouse shortcuts? end -->
 
 				<!-- games -->
@@ -1289,6 +1322,11 @@
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+
+			Reveal.addEventListener("keyboardCopyPaste", () => {
+				const element = document.getElementById("keyboardCopyInput");
+				element.focus();
 			});
 		</script>
 	</body>
